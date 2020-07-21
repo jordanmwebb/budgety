@@ -1,26 +1,23 @@
 Budgety
 ======
 
-https://lucid-lamport-b6d955.netlify.app
+https://jordanmwebb.github.io/budgety/
 
-#### Library app that allows users to search and keep track of the books they love or want to read.
+#### Budgeting app that allows users to track income and expenses in a given month while monitoring the percentage breakdown of each.
 
 ### Functionality
-This app was built as a Single Page Application using **React** in order to render components quickly. The search functionality communicates with **Google Books API** to deliver a list of books associated with a user's search. Users can add books from a search result to their favorites and view the books they have saved on their favorites page. All book data saved by a user is stored in **Cloud Firestore** and pulled in order to render dynamic components to the page for each user. Authentication is handled through **Firebase Authentication**.
+This app was built using Vanilla *JavaScript*. A user can choose whether they are submitting an income or an expense and the data is added to its respective array. This array is mapped over and a new div is created and populated with the data for each income or expense. A percentage is displayed next to each entry based on the income or expense compared to the total amount of money exchanged in the month. An income or expense can be deleted and the running totals will updated automatically.
 
 ### Design
-This application is meant to serve as a utility and so a minimalist design was implemented to provide the user with a very straightfoward experience. The login page, with its fun and vibrant background gradient, quickly guides users through the login journey. White space is largely used for the remaining pages in the site with brand colors applied in small splashes to draw the user's eye to different functions. The book cards returned from search results, or stored on the favorites page, provide ever-changing, dynamically rendered content that is the main attraction of the application.
+This application uses two separate colors carried throughout the design to distinguish between an income and an expense which allows the user to easily navigate the page.
 
 ### Tech Stack
-* React
-* React-Router
-* Webpack
-* Firebase | Cloud Firestore
-* Google Books API
-* Netlify
+* JavaScript
+* HTML
+* CSS
 
 ### Run Locally
 * Run `git clone https://github.com/jordanmwebb/esteem-books.git`
-* Run `npm install` to download dependencies
-* Run `npm run start`
+* Create a local server using an extension like Live Server
+* Start the server
 * You will be directed to a locally served version of the site where you can experiment
